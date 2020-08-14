@@ -47,14 +47,8 @@ def main():
     with open("coco.names.txt", "r") as f:
         classes = [line.strip() for line in f.readlines()]
     layer_names = net.getLayerNames()
-    output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
-    #colors = np.random.uniform(0, 255, size=(len(classes), 3))
-    confidence_threshold = 0.6
-    #font = cv2.FONT_HERSHEY_SIMPLEX
 
-    #detection_confidence = 0.6
-    #cap = cv2.VideoCapture(0)
-    #font = cv2.FONT_HERSHEY_SIMPLEX
+    confidence_threshold = 0.6
     
     paused = False
     
@@ -129,38 +123,23 @@ def main():
                         x, y, w, h = boxes[i]
                         diag_len = np.sqrt((w*w)+(h*h))
                         #print (diag_len)
-                        if diag_len >= 150:
+                        if diag_len >= 150: # Detected object is too close so STOP
                             print("STOP")
                             throttle = -1
                             steering_angle = 0
                             brake = 1
-                        elif diag_len>=50 and diag_len<150:
+                        elif diag_len>=50 and diag_len<150: # Detected object is near by so SLOW DOWN
                             print("SLOW")
                             if throttle>=0:
                                 throttle = throttle/2
                             else:
                                 throttle = throttle-((1+throttle)/2)
-                        else:
+                        else: #Detected object is far 
                             print("JUST DRIVE")
                             if throttle>=0:
                                 throttle = throttle/2
                             else:
                                 throttle = throttle-((1+throttle)/2)
-                    #if (classes[class_ids[i]] == 'stop sign'):
-                        #x, y, w, h = boxes[i]
-                        #diag_len = np.sqrt((w*w)+(h*h))
-                        #if diag_len >= 50:
-                            #print ("stop sign detected")
-                            #throttle = 0
-                            #brake = 1
-                            #steering_angle = 0
-                            #setJoy_Steer_Throttle_Brake(steering_angle,throttle, brake)
-                            #time.sleep(2)
-                            #throttle = 0.15
-                            #brake = 0
-                            #steering_angle = 0
-                            #setJoy_Steer_Throttle_Brake(steering_angle,throttle, brake)
-                            #time.sleep(2)
                             
             setJoy_Steer_Throttle_Brake(steering_angle,throttle, brake)
             time.sleep(0.0001)
@@ -180,10 +159,5 @@ def main():
             
                 setJoy_Steer_Throttle_Brake(steering_angle,throttle, brake)
                 time.sleep(1)
-        #cv2.imshow("Image", img)
-        #if cv2.waitKey(1) & 0xFF == ord ('q'):
-            #break
-        #cv2.destroyAllWindows()
-
 main()
 
