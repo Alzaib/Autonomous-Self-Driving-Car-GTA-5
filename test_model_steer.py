@@ -5,9 +5,8 @@ import time
 from directkeys import PressKey,ReleaseKey, W, A, S, D
 import keras
 from keras.models import load_model
-#import random
 from getkeys import key_check
-#import pydirectinput
+
 
 
 
