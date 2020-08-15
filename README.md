@@ -1,7 +1,7 @@
 # Autonomous Self-driving Car in GTA-5 #
 ## Demo ##
-### Driving with Traffic ###
-### Driving without Traffic ###
+### Driving on the Highway ###
+### Driving in a City ###
 ## About ##
 ## Setup and Requirements ##
 ## Dataset ##
