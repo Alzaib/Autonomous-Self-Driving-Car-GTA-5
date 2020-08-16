@@ -5,7 +5,7 @@
 ### Driving in the City ###
 ![gif](Demo/demo2.gif)
 
-Note: AI is trained on the highway, but still performs relative well in a city.
+Note: AI is trained on the highway, but still performs relative well in the city.
 ## About ##
 The goal of this project is to build a self-driving car with deep learning and computer vision, which can navigate in different environments. The project is inspired by the work done by Sentdex. After experimenting with different convolutional neural networks, NVIDIA's PilotNet is choosen for faster prediction rate. YOLOv3, one of the most popular object detection alogorithm, is also integrated with PilotNet to add steering, throttle and brake control as per traffic density.
 ## Setup and Requirements ##
