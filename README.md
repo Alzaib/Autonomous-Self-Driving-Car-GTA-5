@@ -27,6 +27,7 @@ Dataset used to trained this model can be found here: https://drive.google.com/d
 Using collect_data.py to generate your custom dataset. Ensure the GTA-5 window size same as in the collect_data.py
 Upload the collected data on Google Drive to train your model on Google Colab. 
 ## Training (Google Colab) ##
+Training code can be found here: https://colab.research.google.com/drive/1hjLdVByL0oQxfrcpVlDJgqU9cvNahyaW?usp=sharing
 ## Usage ## 
 ## Future Improvements ##
 ## Acknowledgement ##
