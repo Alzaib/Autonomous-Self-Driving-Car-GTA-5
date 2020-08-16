@@ -5,7 +5,7 @@
 ### Driving in the City ###
 ![gif](Demo/demo2.gif)
 
-Note: AI is trained on the highway, but still performs relative well in the city.
+Note: Thie AI is trained on the highway, but still performs relatively well in the city.
 ## About ##
 The goal of this project is to build a self-driving car with deep learning and computer vision, which can navigate in different environments. The project is inspired by the work done by Sentdex. After experimenting with different convolutional neural networks, NVIDIA's PilotNet is choosen for faster prediction rate. YOLOv3, one of the most popular object detection alogorithm, is also integrated with PilotNet to add steering, throttle and brake control as per traffic density.
 ## Setup and Requirements ##
@@ -22,7 +22,7 @@ The goal of this project is to build a self-driving car with deep learning and c
 ### My Dataset ###
 100,000 images with respective steering angle and throttle is collected by driving the car on the highway. However, only 39,046 images are left after balancing the data, therefore the dataset is arficially expanded by fliping the image along the horizontal axis, and multiplying the steering angle by -1. 
 
-Dataset used to trained this model can be found here: https://drive.google.com/drive/folders/1R787vkWaMe5nsWyLpbXTG55aUv4YteTo?usp=sharing
+Dataset used to trained this model can be found here: https://colab.research.google.com/drive/1hjLdVByL0oQxfrcpVlDJgqU9cvNahyaW?usp=sharing
 ### Custom Dataset ###
 Using collect_data.py to generate your custom dataset. Ensure the GTA-5 window size same as in the collect_data.py
 Upload the collected data on Google Drive to train your model on Google Colab. 
