@@ -28,12 +28,12 @@ The goal of this project is to build a self-driving car with deep learning and c
 ![alt text](Demo/throttle.JPG)
 
 
-Original dataset with 100,000 images used to trained this model can be found here: https://drive.google.com/drive/folders/1R787vkWaMe5nsWyLpbXTG55aUv4YteTo?usp=sharing
+[Original dataset with 100,000 images used to trained this model can be found here](https://drive.google.com/drive/folders/1R787vkWaMe5nsWyLpbXTG55aUv4YteTo?usp=sharing)
 ### Custom Dataset ###
 Use collect_data.py to generate your custom dataset. Ensure the GTA-5 window size same as in the collect_data.py
 Upload the collected data on Google Drive to train your model on Google Colab. 
 ## Training (Google Colab) ##
-Training code can be found here: https://github.com/Alzaib/Autonomous-Self-Driving-Car-GTA-5/blob/master/training_colab/GTA_5_steering.ipynb
+[Training code can be found here](https://github.com/Alzaib/Autonomous-Self-Driving-Car-GTA-5/blob/master/training_colab/GTA_5_steering.ipynb)
 1. Upload the training data on Google Drive
 2. Create a Google Colab, ensure GPU is enabled
 3. Upload the .ipynb file under training_colab to Google Colab
