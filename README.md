@@ -50,4 +50,5 @@ Training code can be found here: https://github.com/Alzaib/Autonomous-Self-Drivi
 3. Use CNN+LSTM to train the model
 ## Acknowledgement ##
 Sentdex: https://www.youtube.com/playlist?list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a
+
 Pysource: https://www.youtube.com/watch?v=h56M5iUVgGs&t=11s
