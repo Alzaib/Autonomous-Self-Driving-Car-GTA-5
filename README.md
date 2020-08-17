@@ -22,13 +22,22 @@ The goal of this project is to build a self-driving car with deep learning and c
 ## Dataset ##
 ### My Dataset ###
 100,000 images with respective steering angle and throttle is collected by driving the car on the highway. However, only 39,046 images are left after balancing the data, therefore the dataset is artificially expanded by flipping the image along the horizontal axis, and multiplying the steering angle by -1. 
+#### Steering ####
+![alt text](Demo/steering.JPG)
+#### Throttle ####
+![alt text](Demo/throttle.JPG)
 
-Dataset used to trained this model can be found here: https://drive.google.com/drive/folders/1R787vkWaMe5nsWyLpbXTG55aUv4YteTo?usp=sharing
+
+[Original dataset with 100,000 images used to trained this model can be found here](https://drive.google.com/drive/folders/1R787vkWaMe5nsWyLpbXTG55aUv4YteTo?usp=sharing)
 ### Custom Dataset ###
 Use collect_data.py to generate your custom dataset. Ensure the GTA-5 window size same as in the collect_data.py
 Upload the collected data on Google Drive to train your model on Google Colab. 
 ## Training (Google Colab) ##
-Training code can be found here: https://colab.research.google.com/drive/1hjLdVByL0oQxfrcpVlDJgqU9cvNahyaW?usp=sharing
+[Training code can be found here](https://github.com/Alzaib/Autonomous-Self-Driving-Car-GTA-5/blob/master/training_colab/GTA_5_steering.ipynb)
+1. Upload the training data on Google Drive
+2. Create a Google Colab, ensure GPU is enabled
+3. Upload the .ipynb file under training_colab to Google Colab
+4. Run the code
 ## Usage ## 
 1. Download and add Xbox 360 Emulator where GTA is installed
 2. Install vJoy
@@ -40,3 +49,6 @@ Training code can be found here: https://colab.research.google.com/drive/1hjLdVB
 2. Increase resolution of the images in the dataset
 3. Use CNN+LSTM to train the model
 ## Acknowledgement ##
+Sentdex: https://www.youtube.com/playlist?list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a
+
+Pysource: https://www.youtube.com/watch?v=h56M5iUVgGs&t=11s
