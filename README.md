@@ -38,6 +38,8 @@ Upload the collected data on Google Drive to train your model on Google Colab.
 2. Create a Google Colab, ensure GPU is enabled
 3. Upload the .ipynb file under training_colab to Google Colab
 4. Run the code
+
+[Trained model, and YOLOv3 weights can be found here](https://drive.google.com/drive/folders/1laagsAkn_TqjyKw1zvd5Okct5Sd3WONF?usp=sharing)
 ## Usage ## 
 1. Download and add Xbox 360 Emulator where GTA is installed
 2. Install vJoy
