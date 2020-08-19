@@ -35,7 +35,7 @@ Upload the collected data on Google Drive to train your model on Google Colab.
 ## Training (Google Colab) ##
 [Training code can be found here](https://github.com/Alzaib/Autonomous-Self-Driving-Car-GTA-5/blob/master/training_colab/GTA_5_steering.ipynb)
 1. Upload the training data on Google Drive
-2. Create a Google Colab, ensure GPU is enabled
+2. Create a Google Colab project, ensure GPU is enabled
 3. Upload the .ipynb file under training_colab to Google Colab
 4. Run the code
 
