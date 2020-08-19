@@ -45,7 +45,7 @@ Upload the collected data on Google Drive to train your model on Google Colab.
 2. Install vJoy
 3. Set vJoy in Xbox 360 Emulator
 4. Download or clone this repo
-5. Run test_model_steer.h5
+5. Run test_model_steer.py
 ## Future Improvements ##
 1. Collect diverse dataset
 2. Increase resolution of the images in the dataset
