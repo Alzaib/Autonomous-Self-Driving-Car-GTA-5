@@ -10,7 +10,7 @@ Note: This AI is trained on the highway, but still performs relatively well in t
 The goal of this project is to build a self-driving car with deep learning and computer vision, which can navigate in different environments. The project is inspired by the work done by Sentdex. After experimenting with different convolutional neural networks, NVIDIA's PilotNet is chosen due to its faster prediction rate. YOLOv3, one of the most popular object detection algorithm, is also integrated with PilotNet to add steering, throttle, and brake control as per traffic density.
 ## Setup and Requirements ##
 1. Grand Theft Auto-5 (turn on hood camera)
-2. Pyhton 3.6
+2. Python 3.6
 3. Tensorflow
 4. Keras
 5. OpenCV
